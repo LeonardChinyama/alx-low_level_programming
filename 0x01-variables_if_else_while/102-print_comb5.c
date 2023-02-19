@@ -15,7 +15,7 @@ int main(void)
 		ln = (i / 10 % 10 + '0');
         ll = (i % 10 + '0');
 
-		if ((fn <= mn) && (mn < ln) && (ln < ll))
+		if ((fn <= mn) && (mn <= ln) && (ln <= ll))
 		{
 			putchar(fn);
 			putchar(mn);
