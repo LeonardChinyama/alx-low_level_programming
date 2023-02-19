@@ -11,17 +11,17 @@ int main(void)
 	for (i = 0; i <= 9999; i++)
 	{
 		fn = (i / 1000 + '0');
-		mn = (i / 100 % 10 + '0');
-		ln = (i / 10 % 10 + '0');
+		mn = (i / 100 % 10);
+		ln = (i / 10 % 10);
         ll = (i % 10 + '0');
 
-		if ((fn <= mn) && (mn <= ln) && (ln < ll))
+		if ((ln + ll) > 0)
 		{
 			putchar(fn);
 			putchar(mn);
 			putchar(' ');
-			putchar(ln);
-            		putchar(ll);
+			putchar(ln + '0');
+            		putchar(ll + '0');
 
 			if (i != 789)
 			{
