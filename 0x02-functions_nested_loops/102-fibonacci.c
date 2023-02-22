@@ -6,9 +6,9 @@
 int main(void)
 {
 	int i;
-	long p = 0, s = 1;
+	long p = 1, s = 0;
 
-	for (i = 0; i < 50; i++)
+	for (i = 0; i <= 50; i++)
 	{
 		if (i == 0)
 			printf("%ld", s);
