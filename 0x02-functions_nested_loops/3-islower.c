@@ -4,7 +4,7 @@
  * function to check if character is lowercase
  */
 
-int _isLower(int c)
+int _islower(int c)
 {
   int v;
   
