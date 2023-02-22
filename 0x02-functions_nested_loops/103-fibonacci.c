@@ -5,7 +5,6 @@
   */
 int main(void)
 {
-	int i;
 	long p = 1, s = 0, s1 = 0;
 
 	while ((s + p) < 4000000)

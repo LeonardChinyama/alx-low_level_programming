@@ -6,19 +6,19 @@
 int main(void)
 {
 	int i;
-	float p = 0, s = 1;
+	float p = 1, s = 1;
 
 	for (i = 0; i < 98; i++)
 	{
 		if (i == 0)
-			printf("%f", s);
+			printf("%.0f", s);
 
 		else
 		{
-            float t = s;
+            		float t = s;
 			s += p;
 			p = t;
-			printf(", %f", s);
+			printf(", %.0f", s);
 		}
 	}
 
