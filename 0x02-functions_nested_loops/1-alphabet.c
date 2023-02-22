@@ -3,12 +3,6 @@
 /*
  * prints from a separate function
  */
-int main(void)
-{
-  print_alphabet();
-
-  retrun (0);
-}
 
 void print_alphabet(void)
 {
