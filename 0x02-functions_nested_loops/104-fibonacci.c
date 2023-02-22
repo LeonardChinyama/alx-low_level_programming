@@ -11,14 +11,14 @@ int main(void)
 	for (i = 0; i < 98; i++)
 	{
 		if (i == 0)
-			printf("%f", s);
+			printf("%.0f", s);
 
 		else
 		{
-            float t = s;
+            		float t = s;
 			s += p;
 			p = t;
-			printf(", %f", s);
+			printf(", %.0f", s);
 		}
 	}
 
