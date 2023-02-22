@@ -19,10 +19,12 @@ void times_table(void)
                 int d = m / 10;
                 int r = m % 10;
 
+		_putchar(44);
                 _putchar(d + '0');
                 _putchar(r + '0');
             } else
             {
+	        _putchar(44);
                 _putchar(m + '0');
             }
 
