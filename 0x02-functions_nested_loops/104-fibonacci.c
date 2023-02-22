@@ -6,7 +6,7 @@
 int main(void)
 {
 	int i;
-	float p = 0, s = 1;
+	float p = 1, s = 1;
 
 	for (i = 0; i < 98; i++)
 	{
