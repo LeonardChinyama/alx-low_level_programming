@@ -1,4 +1,4 @@
-#include "main.header"
+#include "main.h"
 
 /**
 * function to print the 9 times table
