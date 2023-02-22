@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /*
  * function print _putchar to the console
