@@ -1,14 +1,8 @@
-#include <stdio.h>
+#include "main.h"
 
 /*
  * prints from a separate function
  */
-int main(void)
-{
-  print_alphabet();
-
-  retrun (0);
-}
 
 void print_alphabet(void)
 {
