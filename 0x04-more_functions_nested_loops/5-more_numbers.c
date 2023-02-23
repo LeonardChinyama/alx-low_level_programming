@@ -12,7 +12,8 @@ void more_numbers(void)
     {
         for(j = 0; j <= 14; j++)
         {
-            int f = j / 10, l % 10;
+            int f = j / 10;
+            int l = j % 10;
 
             if(f > 0)
             {
@@ -20,11 +21,7 @@ void more_numbers(void)
             }
 
             _putchar(l + '0');
-
-            if(j == 14)
-            {
-                _putchar('\n')
-            }
         }
+        _putchar('\n');
     }
 }
