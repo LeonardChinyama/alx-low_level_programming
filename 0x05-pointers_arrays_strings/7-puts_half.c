@@ -11,6 +11,7 @@ void puts_half(char *str)
     {
     }
 
+<<<<<<< HEAD
     if(i % 2 == 0)
     {
         k = i / 2
@@ -20,11 +21,18 @@ void puts_half(char *str)
     }
 
     for(t = k; t < i; t++)
+=======
+    for(t =  (i / 2); t < i; t++)
+>>>>>>> f0221763bc678b187f4d1e399dff1ab7caeb9c7f
     {
         _putchar(str[t]);
     }
 
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> f0221763bc678b187f4d1e399dff1ab7caeb9c7f
     _putchar('\n');
 
 }

@@ -5,24 +5,18 @@
 */
 void rev_string(char *s)
 {
-    int i;
-    int f = 0;
+    int f, r;
+	char c;
 
-
-    for(i = 0; s[i] !=0; i++)
-    {
-    }
-
-    char c[i];
-
-    for(i = i - 1; i >= 0; i--)
-    {
-        c[f] = s[i];
-        f++;
-    }
-
-    for(i = 0; c[i] != 0; i++)
-    {
-        s[i] = c[i];
-    }
+	for (f = '\0'; s[f] != 0; f++)
+	{
+	}
+	r = 0;
+	for (f = f - 1; r < f; r++)
+	{
+		c = s[f];
+		s[f] = s[r];
+		s[r] = c;
+		f--;
+	}
 }
