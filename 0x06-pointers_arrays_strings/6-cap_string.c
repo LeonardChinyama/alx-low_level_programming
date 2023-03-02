@@ -6,23 +6,20 @@ include "main.h"
 
 char *cap_string(char *f)
 {
-	int a = 0, i;
+	int a, i;
 	int sp = 13;
 	char p[] = {32, '\t', '\n', 44, ';', 46, '!', '?', '"', '(', ')', '{', '}'};
 
-	while (f[a])
+	for (a = 0; f[a] != '\0'; a++)
 	{
-		i = 0;
 
-		while (i < sp)
+		while (i = 0; i < sp; i++)
 		{
 			if ((a == 0 || f[a - 1] == p[i]) && (f[a] >= 97 && f[a] <= 122))
-				f[a] -= 32;
-
-			i++;
+            {
+                f[a] -= 32;
+            }
 		}
-
-		a++;
 	}
 
 	return (f);
