@@ -3,25 +3,27 @@ include "main.h"
 /**
 * Function to capitalize all first letters of words in a string
 */
+
 char *cap_string(char *f)
 {
-   int i;
-   int sp = 0;
+	int a = 0, i;
+	int sp = 13;
+	char p[] = {32, '\t', '\n', 44, ';', 46, '!', '?', '"', '(', ')', '{', '}'};
 
-    for(i = 0; f[i] != '\0'; i++)
-    {
-        int a = i - 1;
-        if( i != 0 && f[a] != '-' && ((f[a] < 'a' && f[a] > 'Z') || f[a] < 'A' || f[a] > 'z'))
-        {
-            sp = 1;
+	while (f[a])
+	{
+		i = 0;
 
-        } else if(sp == 1 && (f[a] >= 'a' && f[a] <= 'z'))
-        {
-            f[a] = f[a] - 32;
-            sp = 0;
-        }else{
-            sp = 0;
-        }
-    }
-    return (f);
+		while (i < sp)
+		{
+			if ((a == 0 || f[a - 1] == p[i]) && (f[a] >= 97 && f[a] <= 122))
+				f[a] -= 32;
+
+			i++;
+		}
+
+		a++;
+	}
+
+	return (f);
 }

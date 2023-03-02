@@ -5,11 +5,11 @@
 */
 char *rot13(char *f)
 {
-    int i, j;
+	int i = 0;
 
-    for ( i = 0; f[i] != '\0'; i++)
+	for (i = 0; f[i] != '\0'; i++)
 	{
-		while ((f[i] >= 'a' && f[i] <= 'z') || (f[i] >= 'A' && f[i] <= 'Z'))
+		for (; (f[i] >= 'a' && f[i] <= 'z') || (f[i] >= 'A' && f[i] <= 'Z'); )
 		{
 			if ((f[i] > 'm' && f[i] <= 'z') || (f[i] > 'M' && f[i] <= 'Z'))
 			{
@@ -21,5 +21,6 @@ char *rot13(char *f)
 			break;
 		}
 	}
-    return (f);
+
+	return (f);
 }
