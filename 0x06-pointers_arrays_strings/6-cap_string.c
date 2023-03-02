@@ -1,4 +1,5 @@
-include "main.h"
+#include "main.h"
+#include <stdio.h>
 
 /**
 * Function to capitalize all first letters of words in a string
