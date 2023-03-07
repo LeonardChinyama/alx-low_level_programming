@@ -1,9 +1,11 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
- * function: locates a substring
- *
- * Return: pointer to the beginning of the located substring, or NULL if the substring is not found
+ * _strstr - Entry point
+ * @haystack: input
+ * @needle: input
+ * Return: Always 0 (Success)
  */
 char *_strstr(char *haystack, char *needle)
 {
